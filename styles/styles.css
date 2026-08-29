@@ -1,0 +1,61 @@
+/* ----------------COLORS----------------------
+
+#FDFFF2
+#26231A
+#403D2B
+#A38B5F
+#4F4C42
+
+*/
+
+/*------------------------FONT // ROOT---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sail&display=swap');
+/*------------------------HEADER---------------------------*/
+
+.header {
+    background-color: #26231A;
+    color: #fdfff2;
+    font-family: "nunito", sans-serif;
+}
+
+a, a:active {
+    color: #fdfff2;
+    text-decoration: none;
+    font-family: "nunito", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/*-------------------------MAIN----------------------*/
+
+main{
+    background-color: #fdfff2;
+}
+h1 {
+    font-family: "sail", sans-serif;
+    font-size: 3rem;
+}
+h2 {
+    font-family: "nunito", sans-serif;
+    font-weight: 700;
+}
+h3 {
+    font-family: "nunito", sans-serif;
+    color: #26231A;
+}
+p {
+    font-family: "nunito", sans-serif;
+}
+span {
+    color: #A38B5F;
+}
+input, textarea {
+    font-family: "nunito", sans-serif;
+}
+/*-------------------------FOTER---------------------*/
+.footer {
+    background-color: #26231A;
+    color: #fdfff2;
+}
