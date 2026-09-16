@@ -24,7 +24,6 @@
     color: #fdfff2;
     font-family: "nunito", sans-serif;
     padding: 1rem;
-    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,10 +76,12 @@ section p {
 h1 {
     font-family: "sail", sans-serif;
     font-size: 3rem;
+    text-align: center;
     justify-self: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 h2 {
+    text-align: center;
     font-family: "nunito", sans-serif;
     font-weight: 700;
     margin: 1rem;
@@ -120,12 +121,18 @@ form {
 }
 figure {
     width: 100%;
+    height: 200px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
 }
 figure img {
-    max-width: 75%;
+    max-width: 100%;
+    object-fit: cover;
     border-radius: 8px;
 }
 figcaption {
@@ -152,4 +159,44 @@ margin-right: 4rem;
 
 footer ul li {
     margin: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+
+    .platos-tipicos img {
+        aspect-ratio: 1/1;
+        max-width: 90%;
+    }
+    .platos-tipicos article {
+        border: 1px solid #A38B5F;
+        border-radius: 4px;
+        padding: 1rem;
+    }
+    figure {
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        border-radius: 8px;
+    }
+        figure img {
+        max-width: 75%;
+        object-fit: cover;
+    }
+        .platos-tipicos {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-template-areas: "plato1 plato2 plato3";
+    }
+
+    .platos-tipicos:nth-child(1) {
+        grid-area: "plato1";
+    }
+    .platos-tipicos:nth-child(2){
+        grid-area: "plato2";
+    }
+    .platos-tipicos:nth-child(3){
+        grid-area: "plato3";
+    }
+
+
 }
