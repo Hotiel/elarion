@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
     <title>Elarion | Lugares</title>
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="../index.html"><img src="../assets/images/icon_w.png" alt="ícono de Elarión"></a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="#lugares-inicio">Lugares</a></li>
-                <li><a href="gastronomia.html">Gastronomia</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg nav-bar" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/icon-w.png" alt="Elarion icon. Home">
+                    <p class="navbar-brand-text">Elarion</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#lugares-inicio">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gastronomia.html">Gastronomia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
         <h1 id="lugares-inicio">Rincones llenos de mágia</h1>
-        <section>
+        <section class="lugares-card">
             <h2>Las Cascadas Feericas</h2>
             <p>
                 Ocultas entre la vegetación de los bosques del este, las Cascadas Feéricas son uno de los paisajes más visitados de Elarion. Sus aguas cristalinas descienden entre antiguas formaciones rocosas y, al caer la tarde, pequeñas luces comienzan a aparecer entre la niebla, dando al lugar una apariencia verdaderamente mágica.
             </p>
             <figure>
-                <img src="../assets/images/cascadas_feericas.jpg" alt="Las Cascadas Feericas">
+                <img src="../assets/images/cascadas-feericas.jpg" alt="Las Cascadas Feericas">
                 <figcaption>Las Cascadas Feericas</figcaption>
             </figure>
         </section>
 
-        <section>
+        <section class="lugares-card">
             <h2>Las Montañas de Aester</h2>
             <p>
                 En el extremo norte de Elarion se elevan las Montañas de Aster, conocidas por sus picos nevados y sus impresionantes vistas. Es un destino ideal para excursionistas y viajeros que no tengan miedo a las alturas.
@@ -45,18 +66,18 @@
             </figure>
         </section>
 
-        <section>
+        <section class="lugares-card">
             <h2>Lago Espejo</h2>
             <p>
                 Sus aguas tranquilas reflejan el cielo y las montañas que lo rodean con una claridad casi perfecta. Durante las primeras horas de la mañana, la superficie del lago puede parecer un segundo mundo suspendido bajo los pies de los visitantes.
             </p>
             <figure>
-                <img src="../assets/images/lago_espejo.jpg" alt="Lago Espejo">
+                <img src="../assets/images/lago-espejo.jpg" alt="Lago Espejo">
                 <figcaption>Lago Espejo</figcaption>
             </figure>
         </section>
 
-        <section>
+        <section class="lugares-card">
             <h2>Las Ruinas de Valdoria</h2>
             <p>
                 Restos de una antigua ciudad construida siglos antes de la aparición de los primeros viajeros. Sus calles, torres y construcciones parcialmente derrumbadas todavía pueden recorrerse, aunque gran parte de su historia continúa siendo un misterio.
@@ -67,13 +88,13 @@
             </figure>
         </section>
 
-        <section>
+        <section class="lugares-card">
             <h2>El Bosque de los Susurros</h2>
             <p>
                 Un extenso bosque cubierto por una niebla permanente y atravesado por antiguos senderos. Los habitantes locales aseguran que, cuando el viento atraviesa los árboles, es posible escuchar voces contando historias olvidadas.
             </p>
             <figure>
-                <img src="../assets/images/bosque_susurros.jpg" alt="El Bosque de los Susurros">
+                <img src="../assets/images/bosque-susurros.jpg" alt="El Bosque de los Susurros">
                 <figcaption>El Bosque de los Susurros</figcaption>
             </figure>
         </section>
@@ -88,5 +109,8 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://wa.me/+5493517701255" disabled>Whatsapp</a></li>
         </ul>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -3,21 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
     <title>Elarion | Gastronomía</title>
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <ul>
-                <li><a href="../index.html"><img src="../assets/images/icon_w.png" alt="ícono de Elarión"></a></li>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="historia.html">Historia</a></li>
-                <li><a href="lugares.html">Lugares</a></li>
-                <li><a href="#gastronomia-inicio">Gastronomia</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg nav-bar" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../assets/images/icon-w.png" alt="Elarion icon. Home">
+                    <p class="navbar-brand-text">Elarion</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./lugares.html">Lugares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#gastronomia-inicio">Gastronomia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -36,35 +57,35 @@
 
             <h2>Platos típicos</h2>
             <div class="platos-tipicos">
-                <article>
+                <article class="plato1">
                     <h3>Estofado de Brumaria</h3>
                     <p>
                         Uno de los platos más populares entre viajeros y habitantes locales. Combina carne, raíces de temporada, verduras y una mezcla de especias cocinadas lentamente durante varias horas.
                     </p>
                     <figure>
-                        <img src="../assets/images/estofado_de_brumaria.jpg" alt="Estofado de Brumaria">
+                        <img src="../assets/images/estofado-de-brumaria.jpg" alt="Estofado de Brumaria">
                         <figcaption>Estofado de Brumaria</figcaption>
                     </figure>
                 </article>
                 
-                <article>
+                <article class="plato2">
                     <h3>Pan de Piedra</h3>
                     <p>
                         Un pan tradicional preparado en hornos construidos directamente sobre roca caliente. Su exterior es crujiente y su interior conserva una textura suave. Se suele servir acompañado de mantequilla de hierbas o Miel de Niebla.
                     </p>
                     <figure>
-                        <img src="../assets/images/pan_de_piedra.jpg" alt="Pan de Piedra">
+                        <img src="../assets/images/pan-de-piedra.jpg" alt="Pan de Piedra">
                         <figcaption>Pan de Piedra</figcaption>
                     </figure>
                 </article>
 
-                <article>
+                <article class="plato3">
                     <h3>Trucha de los Lagos Espejo</h3>
                     <p>
                         Pescada en los fríos lagos del norte, la trucha se prepara habitualmente sobre brasas y se condimenta con Sal de las Montañas Azules y hierbas locales. Es uno de los platos más recomendados para quienes visitan la región por primera vez.
                     </p>
                     <figure>
-                        <img src="../assets/images/trucha_lagos.jpg" alt="Trucha de los Lagos Espejo">
+                        <img src="../assets/images/trucha-lagos.jpg" alt="Trucha de los Lagos Espejo">
                         <figcaption>Trucha de los Lagos Espejo</figcaption>
                     </figure>
                 </article>
@@ -100,10 +121,32 @@
 
             <h2>Taberna del mes</h2>
             <h3>El Grifo dormido</h3>
-            <figure>
-                <img src="../assets/images/el_grifo_dormido.jpg" alt="El Grifo dormido">
-                <figcaption>El Grifo dormido</figcaption>
-            </figure>
+            <article class="carrousel-cont">
+                <div id="carouselExampleAutoplaying" class="carousel slide carrous" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/images/el-grifo-cartel.jpg" class="d-block w-100" alt="Cartel de El Grifo Dormido">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/el-grifo-dormido.jpg" class="d-block w-100" alt="Interior de El Grifo Dormido">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/el-grifo-feria1.jpg" class="d-block w-100" alt="Vendora en Feria anual de la taverna">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/el-grifo-feria2.jpg" class="d-block w-100" alt="Cocineros en la Feria anual de la taverna">
+                        </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>  
+            </article>
             <p>
                 Ubicada en uno de los caminos principales que conectan las antiguas regiones del reino, El Grifo Dormido se ha convertido en una parada obligatoria para viajeros, comerciantes y aventureros.
 
@@ -113,10 +156,7 @@
 
                 Recomendación del viajero: llegá temprano. Los rumores dicen que, después de la medianoche, las mejores historias comienzan a circular entre las mesas.
             </p>
-
         </section>
-
-
     </main>
 
     <footer>
@@ -128,5 +168,8 @@
             <li><a target="_blank" rel="noopener noreferrer" href="https://wa.me/+5493517701255" disabled>Whatsapp</a></li>
         </ul>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
