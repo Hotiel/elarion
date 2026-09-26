@@ -1,0 +1,35 @@
+@use "../base/tipografia.scss";
+@use "../base/base.scss";
+
+input, textarea {
+    font-family: tipografia.$text;
+    margin: 0.5rem;
+    border-radius: 4px;
+    padding: 0.2rem;
+    border: none;
+    border-bottom: 1px solid base.$dark-color;
+    border-left: 1px solid base.$dark-color;
+    outline: none;
+    resize: none;
+    min-width: 200px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+.contact-button {
+    background-color: base.$accent-color;
+
+    &:hover {
+        background-color: base.$dark-color;
+        color: base.$bg-color;
+        transition: ease 0.3s;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}

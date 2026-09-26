@@ -1,0 +1,15 @@
+@use "./base/base.scss";
+@use "./base/tipografia.scss";
+
+@use "./layout/body.scss";
+@use "./layout/header.scss";
+@use "./layout/footer.scss";
+@use "./layout/nav.scss";
+
+@use "./components/figure.scss";
+@use "./components/form.scss";
+
+@use "./utilities/variables.scss";
+@use "./utilities/mixins";
+
+

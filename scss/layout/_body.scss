@@ -1,0 +1,136 @@
+@use "../base/base.scss";
+@use "../base/tipografia.scss";
+
+@use "../utilities/variables.scss";
+@use "../utilities/mixins";
+
+body { background-color: base.$bg-color;}
+
+.carrous{
+    border-radius: 8px;
+    border: 1px solid base.$dark-color;
+    overflow: hidden;
+}
+
+.carrousel-cont{
+    max-width: 720px;
+}    
+
+.platos-tipicos {
+    @media (min-width: 768px) {
+        
+        display: grid;
+        gap: 0.5rem;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-template-areas: 
+        "plato1 plato2"
+        "plato3 plato3";
+
+        .plato1 {
+            grid-area: plato1;
+        }
+    
+        .plato2{
+            grid-area: plato2;
+        }
+    
+        .plato3{
+            grid-area: plato3;
+        }
+
+        img {
+            aspect-ratio: 1/1;
+            max-width: 90%;
+        }
+
+        article {
+            border: 1px solid base.$accent-color;
+            border-radius: 4px;
+            padding: 1rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        
+            display: grid;
+            grid-template-columns: repeat(3, minmax(200px, 1fr));
+            grid-template-areas: "plato1 plato2 plato3";
+    }
+}
+
+    .index-main {
+        @media (min-width: 768px) {
+        section {
+            min-height: 600px;
+            height: 100%;
+            min-width: 350px;
+            justify-content: start;
+            }
+        }
+    }
+    .historia-col {
+        @media (min-width: 768px) {
+            justify-content: start;
+            min-height: 650px;
+        }
+    }
+
+    //reset//
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: base.$bg-color;
+    &:active {
+        text-decoration: none;
+    }
+}
+
+// texto y colores //
+
+h1 {
+    font-family: tipografia.$titles;
+    font-size: 3rem;
+    text-align: center;
+    justify-self: center;
+    margin: 1rem;
+}
+h2{
+    text-align: center;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+body { 
+    color: base.$dark-color;
+    font-family: tipografia.$text;
+    background-color: base.$bg-color;
+}
+main {
+    background-color: base.$bg-color;
+}
+span {
+    color: base.$accent-color;
+}
+section {
+    @extend %flex-center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #26231A;
+}
+article {
+    @extend %flex-center;
+    padding: 1rem;
+    p {
+        margin: 1rem;
+    }
+}
