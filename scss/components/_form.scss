@@ -1,5 +1,5 @@
-@use "../base/tipografia.scss";
-@use "../base/base.scss";
+@use "../base/tipografia";
+@use "../base/base";
 
 input, textarea {
     font-family: tipografia.$text;

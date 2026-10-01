@@ -1,7 +1,7 @@
-@use "../base/base.scss";
-@use "../base/tipografia.scss";
+@use "../base/base";
+@use "../base/tipografia";
 
-@use "../utilities/variables.scss";
+@use "../utilities/variables";
 @use "../utilities/mixins";
 
 body { background-color: base.$bg-color;}
