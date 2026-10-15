@@ -1,7 +1,7 @@
 @use "../base/base";
 @use "../base/tipografia";
+@use "../base/animations";
 
-@use "../utilities/variables";
 @use "../utilities/mixins";
 
 body { background-color: base.$bg-color;}
@@ -119,6 +119,7 @@ main {
 }
 span {
     color: base.$accent-color;
+    animation: breathe 4s ease infinite;
 }
 section {
     @extend %flex-center;

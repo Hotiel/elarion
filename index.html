@@ -6,6 +6,7 @@
     <meta name="description" content="Oficina de Turismo de Elarion">
     <meta name="keywords" content="Elarion, fantasia, turismo, portal">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./assets/images/icon.png" type="image/x-icon">
     <title>Elarion | Inicio</title>
@@ -47,7 +48,7 @@
     <main>
     <div class="container-xl">
         <h1 id="index-inicio">Visite Elarion</h1>
-        <div class="index-main row align-items-start">
+        <div class="index-main row align-items-start" data-aos="fade-up">
             <section class="col">
                 <article>
                     <h2>Un escape mágico... de verdad</h2>
@@ -78,7 +79,7 @@
         </div>
 
         <div class="row">
-        <section class="col">
+        <section class="col" data-aos="fade-up">
             <a href="./pages/lugares.html">
             <article class="carrousel-cont">
                 <div id="carouselExampleAutoplaying" class="carousel slide carrous" data-bs-ride="carousel">
@@ -133,7 +134,7 @@
         </section>
         </div>
 
-            <section>
+            <section data-aos="fade-up">
                 <h2>El portal está esperando</h2>
                 <p>
                     Su ubicación cambia constantemente.
@@ -160,6 +161,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

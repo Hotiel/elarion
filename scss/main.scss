@@ -1,15 +1,14 @@
 @use "./base/base";
 @use "./base/tipografia";
+@use "./base/animations";
 
 @use "./layout/body";
-@use "./layout/header";
 @use "./layout/footer";
 @use "./layout/nav";
 
 @use "./components/figure";
 @use "./components/form";
 
-@use "./utilities/variables";
 @use "./utilities/mixins";
 
 
