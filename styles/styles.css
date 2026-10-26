@@ -32,6 +32,17 @@ body {
   max-width: 720px;
 }
 
+.ingred-row {
+  margin-top: 0.5rem;
+  gap: 3px;
+}
+.ingred-row div {
+  border: 1px solid #A38B5F;
+  border-radius: 8px;
+  padding: 1rem;
+  align-content: center;
+}
+
 @media (min-width: 768px) {
   .platos-tipicos {
     display: grid;

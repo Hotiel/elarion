@@ -14,7 +14,18 @@ body { background-color: base.$bg-color;}
 
 .carrousel-cont{
     max-width: 720px;
-}    
+}
+
+.ingred-row {
+    margin-top: .5rem;
+    gap: 3px;
+        div{
+            border: 1px solid base.$accent-color;
+            border-radius: 8px;
+            padding: 1rem;
+            align-content: center
+    };
+}
 
 .platos-tipicos {
     @media (min-width: 768px) {
