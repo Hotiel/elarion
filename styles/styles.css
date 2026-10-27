@@ -118,8 +118,8 @@ a:active {
 }
 
 h1 {
-  font-family: "sail", sans-serif;
   font-size: 3rem;
+  font-family: "sail", sans-serif;
   text-align: center;
   justify-self: center;
   margin: 1rem;

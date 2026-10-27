@@ -115,8 +115,7 @@ a {
 // texto y colores //
 
 h1 {
-    font-family: tipografia.$titles;
-    font-size: 3rem;
+    @include mixins.text-m(3rem, tipografia.$titles);
     text-align: center;
     justify-self: center;
     margin: 1rem;
