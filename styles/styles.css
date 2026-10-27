@@ -163,18 +163,30 @@ article p {
 footer {
   background-color: #26231A;
   color: #fdfff2;
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
+  margin: auto;
+  text-align: center;
+  min-height: 200px;
 }
 footer ul {
-  margin-right: 4rem;
-  background-color: #26231A;
+  gap: 0.7rem;
+  margin: auto;
+  padding: 0;
 }
-footer ul li {
-  margin: 0.5rem;
+footer p {
+  padding-top: 1rem;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  footer ul {
+    margin-right: 4rem;
+    background-color: #26231A;
+  }
 }
 
 .nav-bar {
