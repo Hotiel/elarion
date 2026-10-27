@@ -92,6 +92,11 @@ body {
   }
 }
 
+.historia-col {
+  margin: 5px;
+  margin-bottom: 1rem;
+  max-width: 95dvw;
+}
 @media (min-width: 768px) {
   .historia-col {
     justify-content: start;
@@ -165,12 +170,14 @@ footer {
   color: #fdfff2;
   margin: auto;
   text-align: center;
-  min-height: 200px;
+  min-height: 220px;
 }
 footer ul {
-  gap: 0.7rem;
   margin: auto;
   padding: 0;
+}
+footer li {
+  margin-bottom: 0.5rem;
 }
 footer p {
   padding-top: 1rem;

@@ -87,10 +87,13 @@ body { background-color: base.$bg-color;}
         }
     }
     .historia-col {
-        @media (min-width: 768px) {
-            justify-content: start;
-            min-height: 650px;
-        }
+        margin: 5px;
+        margin-bottom: 1rem;
+        max-width: 95dvw;
+            @media (min-width: 768px) {
+                justify-content: start;
+                min-height: 650px;
+            }
     }
 
     //reset//
