@@ -8,7 +8,7 @@ El proyecto fue desarrollado como parte de mi formación en desarrollo web y tie
 
 Podés visitar el sitio acá:
 
-👉 https://hotiel.github.io/elarion/
+👉 https://elarion-phi.vercel.app/
 
 ## 📖 Sobre el proyecto
 
