@@ -69,6 +69,13 @@ body { background-color: base.$bg-color;}
     }
 }
 
+    .lugares-card {
+        margin: 5px;
+        margin-bottom: 1rem;
+        max-width: 95dvw;
+    }
+
+
     .index-main {
         @media (min-width: 768px) {
         section {

@@ -77,6 +77,12 @@ body {
   }
 }
 
+.lugares-card {
+  margin: 5px;
+  margin-bottom: 1rem;
+  max-width: 95dvw;
+}
+
 @media (min-width: 768px) {
   .index-main section {
     min-height: 600px;
